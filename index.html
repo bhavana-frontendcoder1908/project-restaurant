@@ -3,66 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resturant</title>
+    <title>Restaurant</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-      <!--nav-->
-      <nav class="n">
-        <div class="n1"><h2>Restaurant</h2></div>
-        <div class="n2">
-           
-             <a href="#welcome">WELCOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#pricing">PRICING</a>
-            <a href="#beer">BEER</a>
-            <a href="#bread">BREAD</a>
-            <a href="#featured">FEATURED</a>
-            <a href="#reservation">RESERVATION</a>
-            <a href="#contact">CONTACT</a>
+  <!--navbar-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#welcome">WELCOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#pricing">PRICING</a>
+        <a href="#beer">BEER</a>
+        <a href="#bread">BREAD</a>
+        <a href="#featured">FEATURED</a>
+        <a href="#reservation">RESERVATION</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <!-- <div id="main">
+      </div> -->
+
+ <!--welcome part-->
+        <div class="d1" id="welcome">
+          <img src="images/steak.jpg" class="img1">
+          <p class="p1"> Restaurant</p>
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></span>
+          <!-- <i class="fa-sharp fa-solid fa-bars"></i> -->
+          <p class="p2"> "Best In City"</p>
+          
         </div>
-    </nav>
-   <br>
-    <!--welcome part-->
-    <div class="d1" id="welcome">
-        <img src="images/steak.jpg" class="img1">
-        <p class="p1"> Restaurant</p>
-        <p class="p2"> "Best In City"</p>
-       
-    </div>
-    <br><br>
-    <!--about us part-->
+
+
+        <!--about us part-->
 
 <div class="a" id="about">
     
-    <div class="a1">
-        <h1 class="h1a">About Us</h1>
-        <p class="pi"><i class="fa-solid fa-utensils"></i></p>
-        <p>Restaurant is a place for simplicity. Good food, good beer, and good service. Simple is the name of the game, and we’re good at finding it in all the right places, even in your dining experience. We’re a small group from Denver, Colorado who make simple food possible. Come join us and see what simplicity tastes like.</p>
-    </div>
+  <div class="a1">
+      <h1 class="h1a">About Us</h1>
+      <p class="pi"><i class="fa-solid fa-utensils"></i></p>
+      <p>Restaurant is a place for simplicity. Good food, good beer, and good service. Simple is the name of the game, and we’re good at finding it in all the right places, even in your dining experience. We’re a small group from Denver, Colorado who make simple food possible. Come join us and see what simplicity tastes like.</p>
+  </div>
 
-    <div class="a2"> 
-        <img src="images/about1.jpg" width="280px" height="200" class="imga2">
-        <img src="images/about2.jpg" width="280px" height="200" class="imga2">
-        <img src="images/about3.jpg" width="280px" height="200" class="imga2">
-        <img src="images/about4.jpg"width="280px" height="200" class="imga2">
-    </div>
+  <div class="a2"> 
+      <img src="images/about1.jpg" width="280px" height="200">
+      <img src="images/about2.jpg" width="280px" height="200">
+      <img src="images/about3.jpg" width="280px" height="200">
+      <img src="images/about4.jpg"width="280px" height="200">
+  </div>
 
 </div>
-<br><br>
 
 <!--pricing part-->
 
 <div class="ap" id="pricing">
-    <br><br>
-    <p class="price">Affordable Pricing</p>
+    
+  <p class="price">Affordable Pricing</p>
 
 </div>
-<br><br>
-
 
 <!--menu all-->
-<p style="font-size: 250%; padding-top: 3%; justify-content: center;text-align: center; font-style: italic; text-decoration: underline; text-underline-offset: 25px; text-decoration-thickness: 2px;">"OUR MENU"</p>   
+<p style="font-size: 250%; padding-top: 3%; justify-content: center;text-align: center; font-style: italic; text-decoration: underline; text-underline-offset: 25px; text-decoration-thickness: 2px;" class="pimg">"OUR MENU"</p>   
 <center>
 <div  style="display: flex; gap:3%;justify-content: center; padding-top: 5%; " class="flip1">
 
@@ -194,28 +198,28 @@
 
         <br><br>
 
-        
+    
     <!--great place-->
 
-<div class="gp" id="beer">
-    <p class="great">Great Place To Enjoy</p>
-</div>
+    <div class="gp" id="beer">
+      <p class="great">Great Place To Enjoy</p>
+  </div>
+  
+  <br><br>
 
-<br><br>
-
-<!---beer--->
+  <!---beer--->
 
 <div class="b" >
-    <div class="b2">
-    <img src="images/beer_spec.jpg" width="350px" height="390px" style="padding-top: 22%;">
-    </div>
+  <div class="b2">
+  <img src="images/beer_spec.jpg" width="350px" height="390px" style="padding-top: 22%;">
+  </div>
 
-    <div class="b1">
+  <div class="b1">
 <h1 class="bla">OUR BEER</h1>
 <p class="bi"><i class="fa-solid fa-beer-mug-empty"></i></p>
 <p>Here at Restaurant we’re all about the love of beer. New and bold flavors enter our doors every week,
-     and we can’t help but show them off. While we enjoy the classics, we’re always passionate about discovering something new, 
-    so stop by and experience our craft at its best.</p>
+   and we can’t help but show them off. While we enjoy the classics, we’re always passionate about discovering something new, 
+  so stop by and experience our craft at its best.</p>
 </div>
 
 </div>   
@@ -228,7 +232,6 @@
 </div>
 
 <br><br>
-
 <!---bread--->
 <div class="br" id="bread" >
     
@@ -244,11 +247,14 @@
             </div>
 </div>
 <br><br>
+
+
 <!---dishes--->
 
 <div class="di" id="featured">
     <p class="dishes">Our Featured Dishes Menu</p>
 </div>
+
 
 
 <!---have a look--->
@@ -332,62 +338,65 @@
     </div><!--look--> 
 <br><br>
 
-
 <!---reserve--->
 <div class="re" id="reservation">
     <p class="reserve">Reserve A Table</p>
 </div>
 
+
 <!---contact--->
 <div class="name" style="display: flex;" id="contact">
-<h3 style="font-size: xx-large; font-style: italic; padding-top: 4%;padding-bottom: 2%;"> Contact Us</h3>
-<h3 style="font-size: xx-large; font-style: italic; padding-top: 4%; padding-bottom: 2%;">Our Engage Hours</h3>
-</label>
-</div>
-<div class="contact">
-<form class="f1">
-    <input class="input border" type="text" placeholder="Name" required name="Name"><br>
-    <input class="input border" type="text" placeholder="Phone" required name="Phone"><br>
-    <input class="input border" type="text" placeholder="Email" required name="Email"><br>
-    <input class="input border" type="text" placeholder="How Many People" required name="How Many People"><br>
-    <input class="input border" type="datetime-local" placeholder="Reservation Date" required name="How Many People"><br>
-    <input class="input border" type="text" placeholder="Subject" required name="Comment">
-    <button class="button" type="submit">RESERVE</button>
-</form>
-<div class="f2">
-<br><br>
-<p> Monday to Friday: 7:30 AM - 11:30 AM</p><br>
-<hr><br>
-<p> Saturday to Sunday: 8:00 AM - 9:00 AM</p><br>
-<hr><br>
-<p> Monday to Friday: 12:00 PM - 5:00 PM</p><br>
-<hr><br>
-<p> Monday to Saturday: 6:00 PM - 11:30 PM</p><br>
-<hr><br>
-<p> Sunday to Monday : 5:30 AM - 11:30 AM</p><br>
-<hr>
-</div>
-</div>
-
+    <h3 style="font-size: xx-large; font-style: italic; padding-top: 4%;padding-bottom: 2%;"> Contact Us</h3>
+    <h3 style="font-size: xx-large; font-style: italic; padding-top: 4%; padding-bottom: 2%;">Our Engage Hours</h3>
+    </label>
+    </div>
+    <div class="contact">
+    <form class="f1">
+        <input class="input border" type="text" placeholder="Name" required name="Name"><br>
+        <input class="input border" type="text" placeholder="Phone" required name="Phone"><br>
+        <input class="input border" type="text" placeholder="Email" required name="Email"><br>
+        <input class="input border" type="text" placeholder="How Many People" required name="How Many People"><br>
+        <input class="input border" type="datetime-local" placeholder="Reservation Date" required name="How Many People"><br>
+        <input class="input border" type="text" placeholder="Subject" required name="Comment">
+        <button class="button" type="submit">RESERVE</button>
+    </form>
+    <div class="f2">
+    <br><br>
+    <p> Monday to Friday: 7:30 AM - 11:30 AM</p>
+    <hr><br>
+    <p> Saturday to Sunday: 8:00 AM - 9:00 AM</p>
+    <hr><br>
+    <p> Monday to Friday: 12:00 PM - 5:00 PM</p>
+    <hr><br>
+    <p> Monday to Saturday: 6:00 PM - 11:30 PM</p>
+    <hr><br>
+    <p> Sunday to Monday : 5:30 AM - 11:30 AM</p>
+    <hr>
+    </div>
+    </div>
+    
+    
 <!---footer-->
 <div class="foot">
 
-<div class="ll"><h4 style="padding-left:15%; padding-bottom: 5%;">FOLLOW</h4> 
-   
-    <div class="li">
-    <p class="li1"> <i class="fa-solid fa-phone"></i></p>
-    <p class="li2"> <i class="fa-brands fa-twitter"></i></p>
-    <p class="li3"> <i class="fa-brands fa-instagram"></i></p>
-    <p class="li4"> <i class="fa-brands fa-youtube"></i></p>
-    <p class="li5"> <i class="fa-solid fa-envelope"></i></p>
-    <p class="li6"> <i class="fa-brands fa-linkedin"></i></p></div>
-</div>
-<div class="ii">
-    <h6 style="padding-left:5%; padding-bottom: 5%;"class="ii1">OR DIAL</h6> 
-   
-<p class="ii2"> (941) 883 - 335 - 6524</p>
-</div>
-</div>
+    <div class="ll"><h4 style="padding-left:15%; padding-bottom: 1%;">FOLLOW</h4> 
+       
+        <div class="li">
+        <p class="li1"> <i class="fa-solid fa-phone"></i></p>
+        <p class="li2"> <i class="fa-brands fa-twitter"></i></p>
+        <p class="li3"> <i class="fa-brands fa-instagram"></i></p>
+        <p class="li4"> <i class="fa-brands fa-youtube"></i></p>
+        <p class="li5"> <i class="fa-solid fa-envelope"></i></p>
+        <p class="li6"> <i class="fa-brands fa-linkedin"></i></p></div>
+    </div>
+    <div class="ii">
+        <h6 style="padding-left:5%; padding-bottom: 1%;"class="ii1">OR DIAL</h6> 
+       
+    <p class="ii2"> (941) 883 - 335 - 6524</p>
+    </div>
+    </div>
+    
+
 
 <!--map-->
 <div> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15443194.38896819!2d74.5848361!3d19.09400204347447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37505558dd0be6a1%3A0x65c7e47c94b6dc45!2sTechnext%20Limited!5e0!3m2!1sen!2sin!4v1728144569099!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe></div>
@@ -410,8 +419,18 @@
 </form>
 </div>
 
-</div><!--final div-->
 
-<link rel="stylesheet" href="resturant.css">
+      <script>
+        /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+      </script>
+      <link rel="stylesheet" href="navbar.css">
 </body>
 </html>
